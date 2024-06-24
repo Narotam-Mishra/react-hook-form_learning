@@ -23,3 +23,10 @@ Q. Why to use React Hook Form ?
 
 # Youtube Form Setup -  Form contains Username, Email, Channel Name
 
+## Lec 3 - useForm Hook (2:09)
+
+# useForm hook - This is the primary tool that library provides for managing forms with ease.
+
+# useForm hook accepts an optional object as an argument and it return an object which we call 'form'. This object help us in 1). managing from data, 2). submitting form data, 3). enforcing validations and provide visual feedback.
+
+#
