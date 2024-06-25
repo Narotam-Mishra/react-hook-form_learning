@@ -29,4 +29,20 @@ Q. Why to use React Hook Form ?
 
 # useForm hook accepts an optional object as an argument and it return an object which we call 'form'. This object help us in 1). managing from data, 2). submitting form data, 3). enforcing validations and provide visual feedback.
 
-#
+## Lec 4 - Managing Form State (4:16)
+
+Q. What is Form state?
+# Every form has a few moving parts that keep changing from the time a user loads the form to the time they submit it. For example,
+a). current value of every field in the form
+b). whether a field has been interacted with
+c). whether the form is invalid
+
+# In code we can represent the form state as an object with key value pairs
+
+# To help manage form's state React Hook Form(RHF) provides a method called 'register' that can be accessed on the form object 
+
+# 'register' method allows us to register a form control with RHF. We can called this method passing in string argument like register("username"). 'register' method in turn returns four methods that we need to hook into the form control. They are - name, ref, onChange, onBlur
+
+## Lec 5 - DevTools Visualization (3:13)
+
+# In order to visualize, form's state we will use @hookform/devtools package from npm 
