@@ -45,4 +45,12 @@ c). whether the form is invalid
 
 ## Lec 5 - DevTools Visualization (3:13)
 
-# In order to visualize, form's state we will use @hookform/devtools package from npm 
+# In order to visualize, form's state we will use @hookform/devtools package from npm.
+
+# Once DevTool is installed, then we need to associate this component with the form we are tracking. For this we can use 'control' object that 'useForm' hook return. We will use DevTool as below syntax
+
+===> <DevTool control={control} />
+
+# 'Touched' indicates whether the field has been interacted with,
+
+# 'Dirty' indicates whether the field value has changed.
