@@ -54,3 +54,9 @@ c). whether the form is invalid
 # 'Touched' indicates whether the field has been interacted with,
 
 # 'Dirty' indicates whether the field value has changed.
+
+## Lec 6 - Form State and Rerenders (2:10)
+
+# With the help of DevTool in RHF, we are able to track the field values. RHF does this without re-rendering the component. so this is great as performance point of view.
+
+# With traditional React's from when we work with controlled components, every keystroke will cause the component and its children to re-render. RHF doesn't do this with form as it follows the uncontrolled inputs behaviour. 
