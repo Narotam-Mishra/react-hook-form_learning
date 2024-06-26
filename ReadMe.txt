@@ -60,3 +60,15 @@ c). whether the form is invalid
 # With the help of DevTool in RHF, we are able to track the field values. RHF does this without re-rendering the component. so this is great as performance point of view.
 
 # With traditional React's from when we work with controlled components, every keystroke will cause the component and its children to re-render. RHF doesn't do this with form as it follows the uncontrolled inputs behaviour. 
+
+## Lec 7 - Form Submission (3:00)
+
+# Form submission with the help of RHF :-
+It involves three steps :-
+1). define the function that should be called when the submit button is pressed,
+
+2). from 'form' object (that is retured from useForm hook) destructure a function called 'handleSubmit', listen to the form on submit event and assign handleSubmit as the handler and pass the onSubmit() function (that user user has defined) to handleSubmit function as argument as below 
+
+==> <form onSubmit={handleSubmit(onSubmit)}>
+
+3). specify the data types as per Typescript specification
