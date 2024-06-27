@@ -72,3 +72,21 @@ It involves three steps :-
 ==> <form onSubmit={handleSubmit(onSubmit)}>
 
 3). specify the data types as per Typescript specification
+
+## Lec 8 - Form validation (4:14)
+
+# RHF supports various HTML validation rules including :- 
+a). required 
+b). min length and max length
+c). min & max
+d). pattern
+
+# noValidate - noValidate attribute on form will prevent browser validation and allowing RHF to handle the validation of form fields.
+
+# validation of form by default occurs only when the form is submitted.
+
+# pattern validation --> for email and password fields
+
+# We can leave the required validation as it is but if want consistency across the rules we can change the required validation to an object as well.
+
+## 
