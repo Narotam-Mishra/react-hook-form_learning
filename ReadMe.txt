@@ -89,4 +89,8 @@ d). pattern
 
 # We can leave the required validation as it is but if want consistency across the rules we can change the required validation to an object as well.
 
-## 
+## Lec 9 - Display Error Messages (3:54)
+
+# from 'form' object (that is returned from useForm hook) we can destructure 'formState' object then further we can destructure 'errors' object from 'formState' object. This 'errors' object contains the individual field errors.
+
+# The 'errors' object contains errors for every field that has failed validation. We can access the message property and display it in the UI.
