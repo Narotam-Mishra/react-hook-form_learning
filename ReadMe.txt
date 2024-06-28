@@ -94,3 +94,26 @@ d). pattern
 # from 'form' object (that is returned from useForm hook) we can destructure 'formState' object then further we can destructure 'errors' object from 'formState' object. This 'errors' object contains the individual field errors.
 
 # The 'errors' object contains errors for every field that has failed validation. We can access the message property and display it in the UI.
+
+## Lec 10 - Custom Validation (5:20)
+
+# To add a custom validation we need to add a key-value pair to the 'options' object passed into the 'register' function. The key is 'validate' that a method used for custom validation.
+
+# 'validate' method works independently of the regex pattern validation.
+
+# we can use 'validate' as an object with multiple key-value pairs.
+
+# so, RHF makes it really simple to not only add HTML validation but also custom validations.
+
+# For Custom validation - Specify a 'validate' function for single custom rule or specify a validate object for multiple custom rules.
+
+# Notes - 
+1). To register a field with RHF, we use 'register' method this automatically start tracking form state.
+
+2). To submit the form, 'handleSubmit' method assigned to the on submit event and pass in our submit function.
+
+3). For validation we can pass options to the register function. These can be HTML validations or custom validations using 'validate' function. In both cases form state is updated and we access the error object with correct key to display the error message to the user.
+
+## Lec 11 - Enhancing React Hook Form (1:07)
+
+# 
