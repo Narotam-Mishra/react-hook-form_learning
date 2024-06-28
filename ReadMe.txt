@@ -116,4 +116,9 @@ d). pattern
 
 ## Lec 11 - Enhancing React Hook Form (1:07)
 
-# 
+# Three pillars of dealing with forms are :-
+a). Form state management
+b). Form Submission
+c). Form Validation
+
+## 
