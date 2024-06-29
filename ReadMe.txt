@@ -121,4 +121,23 @@ a). Form state management
 b). Form Submission
 c). Form Validation
 
-## 
+## Lec 12 - Default Values (4:27)
+
+# set default values to the form fields.
+
+# 'useForm' hook accepts an object as argument, inside this object we can specify a key called 'defaultValues' like below example:
+
+==> const form = useForm<Formvalue>({
+    defaultValues: {
+      username: "tsUser",
+      email: "",
+      channel: "",
+    }
+});
+
+# Setting default values can be useful in certain types of form controls. For example, we can set default country in a select drop down, current date in a date field or check the subscribe to newsletter checkbox for the user to opt out. so by using RHF setting default values are very easy.
+
+Q. Can we load previously saved data as default values in RHF?
+# Yes we can
+
+# To load previously saved data we change default values to an async function
