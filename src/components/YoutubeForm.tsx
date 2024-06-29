@@ -7,26 +7,34 @@ let renderCount = 0;
 type Formvalue = {
   username: string,
   email: string,
-  channel: string
+  channel: string,
+  social: {
+    twitter: string,
+    facebook: string
+  }
 }
 
 const YoutubeForm = () => {
   const form = useForm<Formvalue>({
-    // defaultValues: {
-    //   username: "tsUser",
-    //   email: "",
-    //   channel: "",
-    // }
-
-    defaultValues: async () => {
-      const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
-      const data = await response.json();
-      return {
-        username: "Batman",
-        email: data.email,
-        channel: "",
+    defaultValues: {
+      username: "tsUser",
+      email: "",
+      channel: "",
+      social: {
+        twitter: "",
+        facebook: ""
       }
     }
+
+    // defaultValues: async () => {
+    //   const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    //   const data = await response.json();
+    //   return {
+    //     username: "Batman",
+    //     email: data.email,
+    //     channel: "",
+    //   }
+    // }
   });
 
   const { register, control, handleSubmit, formState } = form;
@@ -109,6 +117,24 @@ const YoutubeForm = () => {
             })}
           />
           <p className="error">{errors.channel?.message}</p>
+        </div>
+
+        <div className="form-control">
+          <label htmlFor="twitter">Twitter</label>
+          <input
+            type="text"
+            id="twitter"
+            {...register("social.twitter")}
+          />
+        </div>
+
+        <div className="form-control">
+          <label htmlFor="facebook">Facebook</label>
+          <input
+            type="text"
+            id="facebook"
+            {...register("social.facebook")}
+          />
         </div>
         <button>Submit</button>
       </form>

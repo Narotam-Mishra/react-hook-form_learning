@@ -141,3 +141,14 @@ Q. Can we load previously saved data as default values in RHF?
 # Yes we can
 
 # To load previously saved data we change default values to an async function
+
+## Lec 13 -  Nested Objects (4:14)
+
+# Somtimes for more complex forms we may want to group certain data together into a separate object, the reason could be that the API accepts the data in such a format but database stores the data in a particular format, whatever might be the reason we would like to group form data together, for such cases we can use nested objects in RHF.
+
+# suppose we want to collect user's social media profiles such as Twitter & Facebook's data, as two fields are related we want them to be grouped and stored as a nested object. 
+Steps to be followed :-
+1). add 'social' to form values type,
+2). on default values object add a new key-value pair,
+3). add required JSX.
+
