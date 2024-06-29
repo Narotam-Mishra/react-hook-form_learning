@@ -11,7 +11,8 @@ type Formvalue = {
   social: {
     twitter: string,
     facebook: string
-  }
+  },
+  phoneNumbers: string[];
 }
 
 const YoutubeForm = () => {
@@ -23,7 +24,8 @@ const YoutubeForm = () => {
       social: {
         twitter: "",
         facebook: ""
-      }
+      },
+      phoneNumbers: ["", ""],
     }
 
     // defaultValues: async () => {
@@ -136,6 +138,25 @@ const YoutubeForm = () => {
             {...register("social.facebook")}
           />
         </div>
+
+        <div className="form-control">
+          <label htmlFor="primary-phone">Primary Phone Number</label>
+          <input
+            type="text"
+            id="facebook"
+            {...register("phoneNumbers.0")}
+          />
+        </div>
+
+        <div className="form-control">
+          <label htmlFor="primary-phone">Secondary Phone Number</label>
+          <input
+            type="text"
+            id="facebook"
+            {...register("phoneNumbers.1")}
+          />
+        </div>
+
         <button>Submit</button>
       </form>
       <DevTool control={control} />

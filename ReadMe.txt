@@ -152,3 +152,18 @@ Steps to be followed :-
 2). on default values object add a new key-value pair,
 3). add required JSX.
 
+## Lec 14 - Arrays (3:40)
+
+# Managing form control values as an array
+
+# suppose we wanted to collect user's phone number, to more preciously we wanted collect their primary and secondary phone number but when storing that data we don't need any clear distinction we just want them stored as an phone numbers under the same label.
+
+# Steps to follow :-
+1). add the phone number type,
+2). we need to add the property to our default values object,
+3). add the required JSX,
+
+# Note - we should use 'dot' notation with array's values phoneNumber , it is used for consistency with TS, we can't use bracket notation for this index.
+
+# 
+
