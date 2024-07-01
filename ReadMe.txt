@@ -177,3 +177,9 @@ Steps to be followed :-
 3). we need to add same 'phNumbers' property we need to our default values object
 4). we need to specify the phone number field as an array of fields (for this we need to use useFieldArray hook),
 5). we need to add required JSX.
+
+## Lec 16 - Numeric and Date Values (4:17)
+
+# how to deal with numeric and date values in RHF :- To ensure that we are dealing with numeric values, RHF provides the value as number option on the register function
+
+## 
