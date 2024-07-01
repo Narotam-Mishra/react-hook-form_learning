@@ -165,5 +165,15 @@ Steps to be followed :-
 
 # Note - we should use 'dot' notation with array's values phoneNumber , it is used for consistency with TS, we can't use bracket notation for this index.
 
-# 
+## Lec 15 - Dynamic Fields (9:34) 
 
+# If we want to collect multiple phone numbers or addresses then we would need dynamic fields. Dynamic fields give user the option to add or remove fields based on their needs.
+
+# To implement dynamic fields to collect user's phone numbers in RHF, we need to import 'useFieldArray' hook.
+
+# we need to follow below steps to implement dynamic fields using 'useFieldArray' hook :-
+1). import 'useFieldArray' hook
+2). add a new property to a form values type , i.e 'phNumbers' as an array of object. In type we will use array of objects instead of an array of strings because 'useFieldArray' hook only works with object values.
+3). we need to add same 'phNumbers' property we need to our default values object
+4). we need to specify the phone number field as an array of fields (for this we need to use useFieldArray hook),
+5). we need to add required JSX.
