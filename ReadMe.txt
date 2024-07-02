@@ -199,3 +199,15 @@ Steps to be followed :-
 # watch() method will be useful if we wanted to display a preview of the form field values
 
 # If we wnt to perform side effect after watching a value then in such case we can use the callback version of the watch method.
+
+## Lec 18 - Get Field Values (3:05)
+
+# Another method to read field values is getValues() method.
+
+# To use 'getValues' method, we will destructure it from the 'from' object
+
+# Unlike 'watch' method, 'getValues' method will not trigger re-renders or subscribe to input changes making it better option for getting form values when a user clicks on a button or perfrom a specific action.
+
+# In addition to retrieving all field values, we can retrieve specific field values by passing in the field name or an array of field names to the 'getValues' method.
+
+# 'getValues' method is very useful method for retrieving form values when a specific action is performed such as 'clicking a button'

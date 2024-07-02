@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { useForm, useFieldArray } from "react-hook-form"
 import { DevTool } from '@hookform/devtools'
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 let renderCount = 0;
 
@@ -48,7 +49,7 @@ const YoutubeForm = () => {
     // }
   });
 
-  const { register, control, handleSubmit, formState, watch } = form;
+  const { register, control, handleSubmit, formState, watch, getValues } = form;
   const { errors } = formState
 
   const { fields, append, remove } = useFieldArray({
@@ -62,14 +63,18 @@ const YoutubeForm = () => {
     console.log('Form submitted!!', data);
   }
 
-  useEffect(() => {
-    const subscription = watch((val) => {
-      console.log(val);
-    })
-    return () => {
-      subscription.unsubscribe();
-    }
-  }, [watch])
+  const handleGetValues = () => {
+    console.log("Get values", getValues(["username", "email"]));
+  }
+
+  // useEffect(() => {
+  //   const subscription = watch((val) => {
+  //     console.log(val);
+  //   })
+  //   return () => {
+  //     subscription.unsubscribe();
+  //   }
+  // }, [watch])
   
 
   // const watchedVal = watch(["username", "email"]);
@@ -235,6 +240,7 @@ const YoutubeForm = () => {
         </div>
 
         <button>Submit</button>
+        <button type="button" onClick={handleGetValues}>Get values</button>
       </form>
       <DevTool control={control} />
     </div>
