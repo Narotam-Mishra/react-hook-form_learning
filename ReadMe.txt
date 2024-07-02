@@ -182,4 +182,20 @@ Steps to be followed :-
 
 # how to deal with numeric and date values in RHF :- To ensure that we are dealing with numeric values, RHF provides the value as number option on the register function
 
-## 
+## Lec 17 - Watch Field Values (4:11)
+
+# how to observe field values for use in the component :- RHF provides a watch method with which we can observe one or more field values.
+
+# from 'form' object we will destructure 'watch' method. we can pass field name (like username) as argument and store the result into a constant. Then we can render that value into UI.
+
+# watch method also accepts an array as argument.(below example)
+
+==> const watchedVal = watch(["username", "email"]);
+
+# If we don't specify any argument to watch method then entire form is watched for changes in value (below example)
+
+==> const watchedForm = watch();
+
+# watch() method will be useful if we wanted to display a preview of the form field values
+
+# If we wnt to perform side effect after watching a value then in such case we can use the callback version of the watch method.
