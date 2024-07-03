@@ -224,3 +224,13 @@ Steps to be followed :-
 
 ## Lec 20 - Touched and Dirty States (3:57)
 
+# When we observe a form field in dev tool, we will see 'touched' and 'dirty' states. 'touched' is a boolean value that indicates whether the user has interacted with the field or not. 'dirty' on the other hand indicates whether the user has modified the input or not.
+
+# Above two states are also available at form label at form level and we can access them by destructuring from 'formState' object.
+
+# RHF provides 'isDirty' which is derived form state that is easier to work with and we can destructure it from 'formState' object.
+
+# 'isDirty' state represent the state of the form itself and not an individual field. This property comes in handy when we have to enable the form submit button only after the user has filled in data.
+
+## 
+
