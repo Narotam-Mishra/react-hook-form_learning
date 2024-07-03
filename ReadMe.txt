@@ -210,4 +210,17 @@ Steps to be followed :-
 
 # In addition to retrieving all field values, we can retrieve specific field values by passing in the field name or an array of field names to the 'getValues' method.
 
-# 'getValues' method is very useful method for retrieving form values when a specific action is performed such as 'clicking a button'
+# 'getValues' method is very useful method for retrieving form values when a specific action is performed such as 'clicking a button'.
+
+## Lec 19 - Set Field Value (3:07)
+
+# to set the field value we need to destructure 'setValue' from the 'from' object.
+
+# this 'setValue' method allow us to set the value of a registered field.
+
+# Note - calling 'setValue' method doesn't affect the state of the field such as dirty, touched or validation. if we want to change the field state as if a user is interacting then we need to pass in a third argument to the 'setValue' mathod.
+
+# 'setValue' method allow us to programmatically set the value of registered field in RHF.
+
+## Lec 20 - Touched and Dirty States (3:57)
+
