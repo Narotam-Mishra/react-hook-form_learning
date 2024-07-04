@@ -170,7 +170,10 @@ const YoutubeForm = () => {
           <input
             type="text"
             id="twitter"
-            {...register("social.twitter")}
+            {...register("social.twitter", {
+              disabled: watch("channel") === "",
+              required: "Enter twitter profile id",
+            })}
           />
         </div>
 
@@ -262,4 +265,4 @@ const YoutubeForm = () => {
   );
 }
 
-export default YoutubeForm
+export default YoutubeForm;

@@ -232,5 +232,11 @@ Steps to be followed :-
 
 # 'isDirty' state represent the state of the form itself and not an individual field. This property comes in handy when we have to enable the form submit button only after the user has filled in data.
 
-## 
+## Lec 21 - Disabling Fields (3:11)
+
+# Tradionally to disable a form field we would set the disabled attribute on an input element.
+
+# with RHF disabling a form field is done using the disabled option on 'register' function.
+
+# with RHF when a form's field is disabled the value of the field becomes undefined and the validation is also disabled.
 
