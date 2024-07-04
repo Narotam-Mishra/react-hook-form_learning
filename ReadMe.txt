@@ -250,3 +250,11 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 # 'onError' method will be called when form submission fails due to errors.
 
 # Error handler is the perfect place to provide custom error messages based on the error objects or even send reports to your login server. It also provide separation of logic for a successful submission and a failed validation.
+
+## Lec 23 - Disable Form Submission (3:16)
+
+# We will disable the form when the user has never interacted with the form or if the form contains errors.
+
+# the assumption is that the form can never be valid if the user has never entered data to begin with.
+
+# To track the validity of our RHF we get access to an isValid form state, we can destructure it from 'formState' object
