@@ -240,3 +240,13 @@ Steps to be followed :-
 
 # with RHF when a form's field is disabled the value of the field becomes undefined and the validation is also disabled.
 
+## Lec 22 - Handle Submission Error (2:27)
+
+# In RHF, we use the 'handleSubmit' method handle form submission.
+
+Q. Why do we need to use 'handleSubmit' method instead of directly passing onSubmit?
+# It is because 'handleSubmit' method accepts a second argument which is the 'onError' handler.
+
+# 'onError' method will be called when form submission fails due to errors.
+
+# Error handler is the perfect place to provide custom error messages based on the error objects or even send reports to your login server. It also provide separation of logic for a successful submission and a failed validation.

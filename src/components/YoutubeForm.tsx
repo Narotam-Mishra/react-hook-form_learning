@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import { useForm, useFieldArray } from "react-hook-form"
+import { useForm, useFieldArray, FieldErrors } from "react-hook-form"
 import { DevTool } from '@hookform/devtools'
 // import { useEffect } from "react";
 
@@ -65,6 +65,11 @@ const YoutubeForm = () => {
     console.log('Form submitted!!', data);
   }
 
+  const onError = (errors: FieldErrors<Formvalue>) => {
+    console.log("Form errors:", errors);
+    
+  }
+
   const handleGetValues = () => {
     console.log("Get values", getValues(["username", "email"]));
   }
@@ -96,7 +101,7 @@ const YoutubeForm = () => {
       <h1>YouTube Form ({renderCount / 2})</h1>
       {/* <h2>Watched Value: {watchedVal}</h2> */}
       {/* <h2>Watched value: {JSON.stringify(watchedForm)}</h2> */}
-      <form onSubmit={handleSubmit(onSubmit)} noValidate>
+      <form onSubmit={handleSubmit(onSubmit, onError)} noValidate>
         <div className="form-control">
           <label htmlFor="username">Username</label>
           <input
