@@ -277,3 +277,18 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 
 # Above properties may not have major role in all scenarios one particular property that can be very useful is 'isSubmitting'. We can use this property to disable the submit button while the form is being submitted preventing multiple submission of the same form.
 
+## Lec 25 - Reset Form (3:11)
+
+# To reset form values we can make use of the 'reset' method that is returned by the 'useForm' hook which we can destructure from the 'form' object.
+
+# 'reset' method allow us to reset the form values to the default values.
+
+# Note - When we reset form values using the 'reset' method, the values are not cleared but rather set back to the default values that we initially defined in the form. This can be useful when we wan to clear the user input values in the form and start fresh but still retain any defult values or initial values that we may have set.
+
+# Another scenario where we migh want to reset form field values is after a successful form submission.
+
+# Note - it is recommended to not call the reset method inside the 'onSubmit' function instead we can make use of the 'isSubmitSuccessful' flag to check if the form submission was successful and then we can call 'reset' method inside a useEffect hook.
+
+# 'reset' method accepts some optional parameters such as values and options which allows us to customize the behaviour of the 'reset' method.
+
+## 
