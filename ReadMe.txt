@@ -291,4 +291,8 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 
 # 'reset' method accepts some optional parameters such as values and options which allows us to customize the behaviour of the 'reset' method.
 
-## 
+## Lec 26 - Async Validation (3:12)
+
+# To use json placeholder API for our form validation we'll add new validation function to the validate object.
+
+# async validation is an important feature to ensure data integirty and improve user experience in form submisison.
