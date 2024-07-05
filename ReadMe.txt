@@ -258,3 +258,22 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 # the assumption is that the form can never be valid if the user has never entered data to begin with.
 
 # To track the validity of our RHF we get access to an isValid form state, we can destructure it from 'formState' object
+
+## Lec 24 - Form Submission State (4:20)
+
+# Form Submission state - It is useful for tracking the progress and outcome of form submission. There are mainly four states related to this :-
+1). isSubmitting
+2). isSubmitted
+3). isSubmitSuccessful
+4). submitCount
+
+1). isSubmitting - this property allows us to track whether a form is in the process of being submitted, it is boolean value with a false default value and is set to true when the form is being submitted
+
+2). isSubmitted - this property allow us to track whether a form has been submitted. It is boolean with false default value and is set to true after form is submitted and remains true until the form is 'reset'.
+
+3). isSubmitSuccessful - this property indicates whether the form was successfully submitted without any runtime errors. It is set to true if the form submission is successful and false otherwise.
+
+4). submitCount - this property keeps track of the number of times the form has been submitted. It is incremented by one each time the form is successfully submitted. Initially the submit count is 0.
+
+# Above properties may not have major role in all scenarios one particular property that can be very useful is 'isSubmitting'. We can use this property to disable the submit button while the form is being submitted preventing multiple submission of the same form.
+
