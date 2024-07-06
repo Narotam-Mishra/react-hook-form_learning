@@ -315,3 +315,11 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 
 # We can validation modes based on the requirement of the application.
 
+## Lec 28 - Manually Trigger Validations (2:41)
+
+# RHF provides us with a method called 'trigger' that we cna destructure it from 'form' object which allow us to manually trigegr validations for our form fields.
+
+# RHF also allow us to validate single field as well that we can do by passing field name in 'trigger' method.
+
+## Lec 29 - Yup Integration (4:35)
+
