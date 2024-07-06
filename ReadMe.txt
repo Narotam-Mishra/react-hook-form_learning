@@ -335,3 +335,7 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 3). define yup validation schema,
 
 4). connect validation schema with RHF.
+
+## Lec 30 - Zod Integration (3:37)
+
+# Zod is a typescript first schema declaration and validation library
