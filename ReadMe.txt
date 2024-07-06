@@ -296,3 +296,22 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 # To use json placeholder API for our form validation we'll add new validation function to the validate object.
 
 # async validation is an important feature to ensure data integirty and improve user experience in form submisison.
+
+## Lec 27 - Validation Modes (3:58)
+
+# By default when we submit form, RHF checks for validation errors and display them accordingly.
+
+# RHF also allow us to change default validation mode by passing an option called 'mode' to the 'useForm' hook.
+
+# the 'mode' option determines when the validation should occur. By default the value of mode is set to 'onSubmit'. We can change the validation mode, let say 'onBlur'. When we set the validation mode to 'onBlur', RHF trigger validation when we focus and then blur out of a form field.
+
+# Another validation mode we can use is 'unTouched'. When we set the mode to 'unTouched' RHF will trigger validation on the first blur event and after that on every change event.
+
+# 'onChange' validation mode - this mode triggers validation on every change event which means that as we start typing into a form field, RHF will continuously validate the input.
+
+# Note - Be careful while using 'onChange' mode as it can lead to multiple re-renders and impact application performance.
+
+# 'all' validation mode - in this case RHF trigger validation on both blur and change events, this means we will see the error messages when we focus and blur out of a form field as well as when we make changes to the input. Thus this mode provides a combination of both 'onBlur' and 'onChange' validation modes.
+
+# We can validation modes based on the requirement of the application.
+
