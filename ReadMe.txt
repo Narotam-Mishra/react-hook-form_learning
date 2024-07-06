@@ -323,3 +323,15 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 
 ## Lec 29 - Yup Integration (4:35)
 
+# Yup is a powerful schema validation library with which we can write schemas and validate our form values.
+
+# hook form resolver is a package which bridges RHF with yup.
+
+# Steps to use Yup
+1). install yup package from npm
+
+2). import the yup dependencies,
+
+3). define yup validation schema,
+
+4). connect validation schema with RHF.
