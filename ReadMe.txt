@@ -339,3 +339,24 @@ Q. Why do we need to use 'handleSubmit' method instead of directly passing onSub
 ## Lec 30 - Zod Integration (3:37)
 
 # Zod is a typescript first schema declaration and validation library
+
+## Lec 31 - Material UI Integration (8:34)
+
+# Integrate Login Form using MUI with RHF
+
+# Steps 
+1). Install MUI,
+2). Create Login form using MUI,
+3). Manage form state using RHF and for this we use useForm hook, register email and password fields using 'register' method
+4). handle form submission using 'handleSubmit' method, 
+5). handle form validation using 'required' field. this will validate the form field values and populate the errors object, 
+
+Q. How to handle errors while managing form?
+# pass the errors object to the appropriate props on the MUI text field component. Error Handling is built into the 'TextField' component so we don't need separate component. We can below syntax for error handling part :-
+
+< TextField label = "Email" type = "email" {...register(
+    "email",
+    { required: "Email is required",
+    }
+) } error = { ! ! errors.email } helperText = { errors.email ?.message } / >
+
